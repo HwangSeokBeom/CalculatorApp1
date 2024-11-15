@@ -24,7 +24,7 @@ class CalulatorView: UIView {
         
     override init(frame: CGRect) {
         buttonStack = CalulatorView.createButtonStack()
-        super.init(frame: frame) //
+        super.init(frame: frame)
         setupUI()
     }
     
@@ -46,6 +46,7 @@ class CalulatorView: UIView {
     }
     
     private static func createButtonStack() -> UIStackView {
+        
         let buttonTitles = [
             ["7", "8", "9", "+"],
             ["4", "5", "6", "-"],
@@ -53,6 +54,35 @@ class CalulatorView: UIView {
             ["AC", "0", "=", "/"]
         ]
         let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.backgroundColor = .white
+        stackView.distribution = .fillEqually
+        stackView.spacing = 10
+        
+        stackView.snp.makeConstraints { make in
+            make.width.equalTo(350)
+        }
+        
+        for row in buttonTitles {
+            let rowStack = UIStackView()
+            rowStack.backgroundColor = .white
+            rowStack.distribution = .fillEqually
+            rowStack.axis = .horizontal
+            rowStack.spacing = 10
+            
+            rowStack.snp.makeConstraints { make in
+                make.height.equalTo(80)
+            }
+            
+            for title in row {
+                let button = UIButton(type: .system)
+                button.setTitle(title, for: .normal)
+                rowStack.addArrangedSubview(button)
+            }
+            
+            stackView.addArrangedSubview(rowStack)
+        }
+        
         
         return stackView
     }
