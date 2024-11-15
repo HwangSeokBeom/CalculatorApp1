@@ -8,14 +8,15 @@
 import UIKit
 
 class CalulatorViewController: UIViewController {
-
+    private let calculatorView = CalulatorView()
+    
+    override func loadView() {
+        self.view = calculatorView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    let a = UIView()
-
-
 }
 
