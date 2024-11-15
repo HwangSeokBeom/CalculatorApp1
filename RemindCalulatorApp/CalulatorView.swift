@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class CalulatorView: UIView {
 
@@ -25,5 +26,9 @@ class CalulatorView: UIView {
         label.textAlignment = .right
         return label
     }()
+    
+    let buttonStack: UIStackView
+    
+    
 
 }
