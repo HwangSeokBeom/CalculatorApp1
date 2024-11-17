@@ -9,6 +9,7 @@ import UIKit
 
 class CalulatorViewController: UIViewController {
     private let calculatorView = CalulatorView()
+    private let
     
     override func loadView() {
         self.view = calculatorView

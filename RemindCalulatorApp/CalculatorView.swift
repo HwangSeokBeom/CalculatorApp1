@@ -18,12 +18,12 @@ class CalulatorView: UIView {
         label.font = .systemFont(ofSize: 60, weight: .bold)
         label.textAlignment = .right
         return label
-    }()
+    }() // 결과 라벨 인스턴스 생성 및 초기화
     
     let buttonStack: UIStackView
         
     override init(frame: CGRect) {
-        buttonStack = CalulatorView.createButtonStack()
+        buttonStack = CalulatorView.createButtonStack() // 버튼 인스턴스 생성 및 초기화
         super.init(frame: frame)
         setupUI()
     }
@@ -43,6 +43,12 @@ class CalulatorView: UIView {
             make.top.equalToSuperview().offset(200)
             make.height.equalTo(100)
         }
+        
+        buttonStack.snp.makeConstraints { make in
+            make.width.equalTo(350)
+            make.top.equalTo(displayLabel.snp.bottom).offset(60)
+            make.centerX.equalToSuperview()
+        }
     }
     
     private static func createButtonStack() -> UIStackView {
@@ -55,7 +61,7 @@ class CalulatorView: UIView {
         ]
         let stackView = UIStackView()
         stackView.axis = .vertical
-        stackView.backgroundColor = .white
+        stackView.backgroundColor = .black
         stackView.distribution = .fillEqually
         stackView.spacing = 10
         
@@ -65,7 +71,7 @@ class CalulatorView: UIView {
         
         for row in buttonTitles {
             let rowStack = UIStackView()
-            rowStack.backgroundColor = .white
+            rowStack.backgroundColor = .black
             rowStack.distribution = .fillEqually
             rowStack.axis = .horizontal
             rowStack.spacing = 10
@@ -75,16 +81,13 @@ class CalulatorView: UIView {
             }
             
             for title in row {
-                let button = UIButton(type: .system)
-                button.setTitle(title, for: .normal)
+                let button = UIButton.create(withTitle: title)
                 rowStack.addArrangedSubview(button)
             }
-            
             stackView.addArrangedSubview(rowStack)
         }
-        
-        
         return stackView
     }
+    
 
 }
