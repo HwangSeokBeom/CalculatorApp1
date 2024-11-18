@@ -205,7 +205,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8B8E2AE92CE6F173001EEC99 /* Build configuration list for PBXProject "RemindCalulatorApp" */;
+			buildConfigurationList = 8B8E2AE92CE6F173001EEC99 /* Build configuration list for PBXProject "CalculatorApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -539,7 +539,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8B8E2AE92CE6F173001EEC99 /* Build configuration list for PBXProject "RemindCalulatorApp" */ = {
+		8B8E2AE92CE6F173001EEC99 /* Build configuration list for PBXProject "CalculatorApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B8E2B1A2CE6F174001EEC99 /* Debug */,
