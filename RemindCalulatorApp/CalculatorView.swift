@@ -8,11 +8,13 @@
 import UIKit
 import SnapKit
 
-class CalulatorView: UIView {
+
+class CalculatorView: UIView, HighlightableViewDelegate {
+    
 
     let displayLabel: UILabel = {
         let label = UILabel()
-        label.text = "12345"
+        label.text = "0"
         label.backgroundColor = .black
         label.textColor = .white
         label.font = .systemFont(ofSize: 60, weight: .bold)
@@ -23,7 +25,7 @@ class CalulatorView: UIView {
     let buttonStack: UIStackView
         
     override init(frame: CGRect) {
-        buttonStack = CalulatorView.createButtonStack() // 버튼 인스턴스 생성 및 초기화
+        buttonStack = CalculatorView.createButtonStack() // 버튼 인스턴스 생성 및 초기화
         super.init(frame: frame)
         setupUI()
     }
@@ -59,26 +61,10 @@ class CalulatorView: UIView {
             ["1", "2", "3", "*"],
             ["AC", "0", "=", "/"]
         ]
-        let stackView = UIStackView()
-        stackView.axis = .vertical
-        stackView.backgroundColor = .black
-        stackView.distribution = .fillEqually
-        stackView.spacing = 10
-        
-        stackView.snp.makeConstraints { make in
-            make.width.equalTo(350)
-        }
+        let stackView = UIStackView.create(with: .vertical)
         
         for row in buttonTitles {
-            let rowStack = UIStackView()
-            rowStack.backgroundColor = .black
-            rowStack.distribution = .fillEqually
-            rowStack.axis = .horizontal
-            rowStack.spacing = 10
-            
-            rowStack.snp.makeConstraints { make in
-                make.height.equalTo(80)
-            }
+            let rowStack = UIStackView.create(with: .horizontal)
             
             for title in row {
                 let button = UIButton.create(withTitle: title)
@@ -89,5 +75,12 @@ class CalulatorView: UIView {
         return stackView
     }
     
-
+    func didHighlightButton() {
+        print(1)
+    }
+    
+    func didUnhighlightButton() {
+        print(2)
+    }
+    
 }

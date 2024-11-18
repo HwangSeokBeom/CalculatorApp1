@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = scene as? UIWindowScene else { return }
         let window = UIWindow(windowScene: windowScene)
         // window 에게 루트 뷰컨트롤러 지정.
-        window.rootViewController = CalulatorViewController()
+        window.rootViewController = CalculatorViewController()
         // 이 메서드를 반드시 작성해줘야만 윈도우가 활성화가 됨
         window.makeKeyAndVisible()
         self.window = window
