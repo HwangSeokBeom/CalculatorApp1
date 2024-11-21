@@ -12,8 +12,6 @@ class CalculatorViewController: UIViewController {
     private let calculatorView = CalculatorView()
     private let calculatorViewModel = CalculatorViewModel()
     
-    weak var delegate: HighlightableViewDelegate?
-    
     override func loadView() {
         self.view = calculatorView
     }
