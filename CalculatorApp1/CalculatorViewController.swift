@@ -41,28 +41,24 @@ class CalculatorViewController: UIViewController {
     }
     
     @objc private func buttonTapped(_ sender: UIButton) {
-        guard let title = sender.currentTitle else { return }
+        guard let title = sender.currentTitle, let button = CalculatorButton.from(title: title) else { return }
+        
         sender.setTitle(title, for: .highlighted)
         UIView.animate(withDuration: 0.1) { [self] in
             sender.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
-            switch title {
-            case "AC":
+            switch button {
+            case .allClear:
                 calculatorViewModel.reset()
-            case "=":
+            case .equals:
                 calculatorViewModel.calculateResult()
-            case "+":
-                calculatorViewModel.inputOperation(+)
-            case "-":
-                calculatorViewModel.inputOperation(-)
-            case "*":
-                calculatorViewModel.inputOperation(*)
-            case "/":
-                calculatorViewModel.inputOperation(/)
-            default:
-                if let number = Int(title) {
-                    calculatorViewModel.inputNumber(number) // View 에서는 숫자를 Int로 다 넘겨 준다.
-                }
+            case .addition, .subtraction, .multiplication, .division:
+                // 클로저를 반환받아 전달
+                let operation = button.getOperation()
+                calculatorViewModel.inputOperation(operation)
+            case .number(let value):
+                calculatorViewModel.inputNumber(value) // 숫자를 Int로 전달
             }
+            
             calculatorView.displayLabel.text = calculatorViewModel.displayText
         }
     }

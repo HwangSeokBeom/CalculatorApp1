@@ -12,21 +12,17 @@ import SnapKit
 extension UIButton {
     static func create(withTitle title: String) -> UIButton {
         let button = UIButton()
-        switch title {
-        case "+", "-", "*", "/", "AC", "=":
-            button.setTitle(title, for: .normal)
-            button.titleLabel?.font = .boldSystemFont(ofSize: 30)
+        let calculatorButton = CalculatorButton.from(title: title)
+        button.setTitle(title, for: .normal)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 30)
+        button.frame.size.width = 80
+        button.frame.size.height = 80
+        button.layer.cornerRadius = 40
+        switch calculatorButton {
+        case .allClear, .equals, .addition, .subtraction, .multiplication, .division:
             button.backgroundColor = .orange
-            button.frame.size.width = 80
-            button.frame.size.height = 80
-            button.layer.cornerRadius = 40
         default:
-            button.setTitle(title, for: .normal)
-            button.titleLabel?.font = .boldSystemFont(ofSize: 30)
             button.backgroundColor = UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)
-            button.frame.size.width = 80
-            button.frame.size.height = 80
-            button.layer.cornerRadius = 40
         }
         return button
     }
