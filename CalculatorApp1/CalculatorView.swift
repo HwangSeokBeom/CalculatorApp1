@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 
-class CalculatorView: UIView, HighlightableViewDelegate {
+class CalculatorView: UIView {
     
 
     let displayLabel: UILabel = {
@@ -74,13 +74,5 @@ class CalculatorView: UIView, HighlightableViewDelegate {
         }
         return stackView
     }
-    
-    func didHighlightButton() {
-        print(1)
-    }
-    
-    func didUnhighlightButton() {
-        print(2)
-    }
-    
+
 }

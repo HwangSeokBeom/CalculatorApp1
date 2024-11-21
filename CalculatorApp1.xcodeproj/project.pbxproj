@@ -17,8 +17,6 @@
 		8BD1E0BE2CEECB9F00DF9E51 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E0B62CEECB9F00DF9E51 /* UIStackView.swift */; };
 		8BD1E0BF2CEECB9F00DF9E51 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E0AC2CEECB9F00DF9E51 /* CalculatorView.swift */; };
 		8BD1E0C02CEECB9F00DF9E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1E0AA2CEECB9F00DF9E51 /* Assets.xcassets */; };
-		8BD1E0C12CEECB9F00DF9E51 /* README.me in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1E0B22CEECB9F00DF9E51 /* README.me */; };
-		8BD1E0C32CEECB9F00DF9E51 /* README.me 복사본 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1E0B32CEECB9F00DF9E51 /* README.me 복사본 */; };
 		8BD1E0C42CEECB9F00DF9E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1E0B12CEECB9F00DF9E51 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -51,8 +49,6 @@
 		8BD1E0AE2CEECB9F00DF9E51 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		8BD1E0AF2CEECB9F00DF9E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BD1E0B02CEECB9F00DF9E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8BD1E0B22CEECB9F00DF9E51 /* README.me */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.me; sourceTree = "<group>"; };
-		8BD1E0B32CEECB9F00DF9E51 /* README.me 복사본 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "README.me 복사본"; sourceTree = "<group>"; };
 		8BD1E0B42CEECB9F00DF9E51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8BD1E0B52CEECB9F00DF9E51 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		8BD1E0B62CEECB9F00DF9E51 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
@@ -128,8 +124,6 @@
 				8BD1E0AE2CEECB9F00DF9E51 /* CalculatorViewModel.swift */,
 				8BD1E0AF2CEECB9F00DF9E51 /* Info.plist */,
 				8BD1E0B12CEECB9F00DF9E51 /* LaunchScreen.storyboard */,
-				8BD1E0B22CEECB9F00DF9E51 /* README.me */,
-				8BD1E0B32CEECB9F00DF9E51 /* README.me 복사본 */,
 				8BD1E0B42CEECB9F00DF9E51 /* SceneDelegate.swift */,
 				8BD1E0B52CEECB9F00DF9E51 /* UIButton.swift */,
 				8BD1E0B62CEECB9F00DF9E51 /* UIStackView.swift */,
@@ -259,8 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BD1E0C02CEECB9F00DF9E51 /* Assets.xcassets in Resources */,
-				8BD1E0C12CEECB9F00DF9E51 /* README.me in Resources */,
-				8BD1E0C32CEECB9F00DF9E51 /* README.me 복사본 in Resources */,
 				8BD1E0C42CEECB9F00DF9E51 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

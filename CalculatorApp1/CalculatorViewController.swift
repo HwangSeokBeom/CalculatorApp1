@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol HighlightableViewDelegate: AnyObject {
-    func didHighlightButton()
-    func didUnhighlightButton()
-}
 
 class CalculatorViewController: UIViewController {
     private let calculatorView = CalculatorView()
