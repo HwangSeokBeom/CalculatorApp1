@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B8C84D62CE7102E003E6E78 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8B8C84D52CE7102E003E6E78 /* SnapKit */; };
+		8BA633E02CEF93FD00CD3390 /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA633DF2CEF93FD00CD3390 /* CalculatorButton.swift */; };
 		8BD1E0B82CEECB9F00DF9E51 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E0B52CEECB9F00DF9E51 /* UIButton.swift */; };
 		8BD1E0B92CEECB9F00DF9E51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E0A92CEECB9F00DF9E51 /* AppDelegate.swift */; };
 		8BD1E0BA2CEECB9F00DF9E51 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E0AD2CEECB9F00DF9E51 /* CalculatorViewController.swift */; };
@@ -41,6 +42,7 @@
 		8B8E2AEE2CE6F173001EEC99 /* CalculatorApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8E2B042CE6F174001EEC99 /* RemindCalulatorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindCalulatorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8E2B0E2CE6F174001EEC99 /* RemindCalulatorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindCalulatorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA633DF2CEF93FD00CD3390 /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
 		8BD1E0A92CEECB9F00DF9E51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BD1E0AA2CEECB9F00DF9E51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BD1E0AB2CEECB9F00DF9E51 /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		8BD1E0B72CEECB9F00DF9E51 /* CalculatorApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				8BA633DF2CEF93FD00CD3390 /* CalculatorButton.swift */,
 				8BD1E0A92CEECB9F00DF9E51 /* AppDelegate.swift */,
 				8BD1E0AA2CEECB9F00DF9E51 /* Assets.xcassets */,
 				8BD1E0AB2CEECB9F00DF9E51 /* CalculatorModel.swift */,
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BD1E0B82CEECB9F00DF9E51 /* UIButton.swift in Sources */,
+				8BA633E02CEF93FD00CD3390 /* CalculatorButton.swift in Sources */,
 				8BD1E0B92CEECB9F00DF9E51 /* AppDelegate.swift in Sources */,
 				8BD1E0BA2CEECB9F00DF9E51 /* CalculatorViewController.swift in Sources */,
 				8BD1E0BB2CEECB9F00DF9E51 /* CalculatorModel.swift in Sources */,
