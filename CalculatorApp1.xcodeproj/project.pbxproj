@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8B8C84D62CE7102E003E6E78 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8B8C84D52CE7102E003E6E78 /* SnapKit */; };
+		8BD1E0B82CEECB9F00DF9E51 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E0B52CEECB9F00DF9E51 /* UIButton.swift */; };
+		8BD1E0B92CEECB9F00DF9E51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E0A92CEECB9F00DF9E51 /* AppDelegate.swift */; };
+		8BD1E0BA2CEECB9F00DF9E51 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E0AD2CEECB9F00DF9E51 /* CalculatorViewController.swift */; };
+		8BD1E0BB2CEECB9F00DF9E51 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E0AB2CEECB9F00DF9E51 /* CalculatorModel.swift */; };
+		8BD1E0BC2CEECB9F00DF9E51 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E0AE2CEECB9F00DF9E51 /* CalculatorViewModel.swift */; };
+		8BD1E0BD2CEECB9F00DF9E51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E0B42CEECB9F00DF9E51 /* SceneDelegate.swift */; };
+		8BD1E0BE2CEECB9F00DF9E51 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E0B62CEECB9F00DF9E51 /* UIStackView.swift */; };
+		8BD1E0BF2CEECB9F00DF9E51 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E0AC2CEECB9F00DF9E51 /* CalculatorView.swift */; };
+		8BD1E0C02CEECB9F00DF9E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1E0AA2CEECB9F00DF9E51 /* Assets.xcassets */; };
+		8BD1E0C12CEECB9F00DF9E51 /* README.me in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1E0B22CEECB9F00DF9E51 /* README.me */; };
+		8BD1E0C32CEECB9F00DF9E51 /* README.me 복사본 in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1E0B32CEECB9F00DF9E51 /* README.me 복사본 */; };
+		8BD1E0C42CEECB9F00DF9E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1E0B12CEECB9F00DF9E51 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,30 +40,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8B8E2AEE2CE6F173001EEC99 /* RemindCalulatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindCalulatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8E2AEE2CE6F173001EEC99 /* CalculatorApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8E2B042CE6F174001EEC99 /* RemindCalulatorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindCalulatorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8E2B0E2CE6F174001EEC99 /* RemindCalulatorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindCalulatorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD1E0A92CEECB9F00DF9E51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BD1E0AA2CEECB9F00DF9E51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BD1E0AB2CEECB9F00DF9E51 /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
+		8BD1E0AC2CEECB9F00DF9E51 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		8BD1E0AD2CEECB9F00DF9E51 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		8BD1E0AE2CEECB9F00DF9E51 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		8BD1E0AF2CEECB9F00DF9E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD1E0B02CEECB9F00DF9E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BD1E0B22CEECB9F00DF9E51 /* README.me */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.me; sourceTree = "<group>"; };
+		8BD1E0B32CEECB9F00DF9E51 /* README.me 복사본 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "README.me 복사본"; sourceTree = "<group>"; };
+		8BD1E0B42CEECB9F00DF9E51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8BD1E0B52CEECB9F00DF9E51 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		8BD1E0B62CEECB9F00DF9E51 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		8B8E2B162CE6F174001EEC99 /* Exceptions for "RemindCalulatorApp" folder in "RemindCalulatorApp" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 8B8E2AED2CE6F173001EEC99 /* RemindCalulatorApp */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8B8E2AF02CE6F173001EEC99 /* RemindCalulatorApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				8B8E2B162CE6F174001EEC99 /* Exceptions for "RemindCalulatorApp" folder in "RemindCalulatorApp" target */,
-			);
-			path = RemindCalulatorApp;
-			sourceTree = "<group>";
-		};
 		8B8E2B072CE6F174001EEC99 /* RemindCalulatorAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = RemindCalulatorAppTests;
@@ -93,7 +100,7 @@
 		8B8E2AE52CE6F173001EEC99 = {
 			isa = PBXGroup;
 			children = (
-				8B8E2AF02CE6F173001EEC99 /* RemindCalulatorApp */,
+				8BD1E0B72CEECB9F00DF9E51 /* CalculatorApp1 */,
 				8B8E2B072CE6F174001EEC99 /* RemindCalulatorAppTests */,
 				8B8E2B112CE6F174001EEC99 /* RemindCalulatorAppUITests */,
 				8B8E2AEF2CE6F173001EEC99 /* Products */,
@@ -103,19 +110,39 @@
 		8B8E2AEF2CE6F173001EEC99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B8E2AEE2CE6F173001EEC99 /* RemindCalulatorApp.app */,
+				8B8E2AEE2CE6F173001EEC99 /* CalculatorApp1.app */,
 				8B8E2B042CE6F174001EEC99 /* RemindCalulatorAppTests.xctest */,
 				8B8E2B0E2CE6F174001EEC99 /* RemindCalulatorAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8BD1E0B72CEECB9F00DF9E51 /* CalculatorApp1 */ = {
+			isa = PBXGroup;
+			children = (
+				8BD1E0A92CEECB9F00DF9E51 /* AppDelegate.swift */,
+				8BD1E0AA2CEECB9F00DF9E51 /* Assets.xcassets */,
+				8BD1E0AB2CEECB9F00DF9E51 /* CalculatorModel.swift */,
+				8BD1E0AC2CEECB9F00DF9E51 /* CalculatorView.swift */,
+				8BD1E0AD2CEECB9F00DF9E51 /* CalculatorViewController.swift */,
+				8BD1E0AE2CEECB9F00DF9E51 /* CalculatorViewModel.swift */,
+				8BD1E0AF2CEECB9F00DF9E51 /* Info.plist */,
+				8BD1E0B12CEECB9F00DF9E51 /* LaunchScreen.storyboard */,
+				8BD1E0B22CEECB9F00DF9E51 /* README.me */,
+				8BD1E0B32CEECB9F00DF9E51 /* README.me 복사본 */,
+				8BD1E0B42CEECB9F00DF9E51 /* SceneDelegate.swift */,
+				8BD1E0B52CEECB9F00DF9E51 /* UIButton.swift */,
+				8BD1E0B62CEECB9F00DF9E51 /* UIStackView.swift */,
+			);
+			path = CalculatorApp1;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8B8E2AED2CE6F173001EEC99 /* RemindCalulatorApp */ = {
+		8B8E2AED2CE6F173001EEC99 /* CalculatorApp1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B8E2B172CE6F174001EEC99 /* Build configuration list for PBXNativeTarget "RemindCalulatorApp" */;
+			buildConfigurationList = 8B8E2B172CE6F174001EEC99 /* Build configuration list for PBXNativeTarget "CalculatorApp1" */;
 			buildPhases = (
 				8B8E2AEA2CE6F173001EEC99 /* Sources */,
 				8B8E2AEB2CE6F173001EEC99 /* Frameworks */,
@@ -125,15 +152,12 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				8B8E2AF02CE6F173001EEC99 /* RemindCalulatorApp */,
-			);
-			name = RemindCalulatorApp;
+			name = CalculatorApp1;
 			packageProductDependencies = (
 				8B8C84D52CE7102E003E6E78 /* SnapKit */,
 			);
 			productName = RemindCalulatorApp;
-			productReference = 8B8E2AEE2CE6F173001EEC99 /* RemindCalulatorApp.app */;
+			productReference = 8B8E2AEE2CE6F173001EEC99 /* CalculatorApp1.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8B8E2B032CE6F174001EEC99 /* RemindCalulatorAppTests */ = {
@@ -205,7 +229,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8B8E2AE92CE6F173001EEC99 /* Build configuration list for PBXProject "CalculatorApp" */;
+			buildConfigurationList = 8B8E2AE92CE6F173001EEC99 /* Build configuration list for PBXProject "CalculatorApp1" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -222,7 +246,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8B8E2AED2CE6F173001EEC99 /* RemindCalulatorApp */,
+				8B8E2AED2CE6F173001EEC99 /* CalculatorApp1 */,
 				8B8E2B032CE6F174001EEC99 /* RemindCalulatorAppTests */,
 				8B8E2B0D2CE6F174001EEC99 /* RemindCalulatorAppUITests */,
 			);
@@ -234,6 +258,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD1E0C02CEECB9F00DF9E51 /* Assets.xcassets in Resources */,
+				8BD1E0C12CEECB9F00DF9E51 /* README.me in Resources */,
+				8BD1E0C32CEECB9F00DF9E51 /* README.me 복사본 in Resources */,
+				8BD1E0C42CEECB9F00DF9E51 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD1E0B82CEECB9F00DF9E51 /* UIButton.swift in Sources */,
+				8BD1E0B92CEECB9F00DF9E51 /* AppDelegate.swift in Sources */,
+				8BD1E0BA2CEECB9F00DF9E51 /* CalculatorViewController.swift in Sources */,
+				8BD1E0BB2CEECB9F00DF9E51 /* CalculatorModel.swift in Sources */,
+				8BD1E0BC2CEECB9F00DF9E51 /* CalculatorViewModel.swift in Sources */,
+				8BD1E0BD2CEECB9F00DF9E51 /* SceneDelegate.swift in Sources */,
+				8BD1E0BE2CEECB9F00DF9E51 /* UIStackView.swift in Sources */,
+				8BD1E0BF2CEECB9F00DF9E51 /* CalculatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,15 +316,26 @@
 /* Begin PBXTargetDependency section */
 		8B8E2B062CE6F174001EEC99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8B8E2AED2CE6F173001EEC99 /* RemindCalulatorApp */;
+			target = 8B8E2AED2CE6F173001EEC99 /* CalculatorApp1 */;
 			targetProxy = 8B8E2B052CE6F174001EEC99 /* PBXContainerItemProxy */;
 		};
 		8B8E2B102CE6F174001EEC99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8B8E2AED2CE6F173001EEC99 /* RemindCalulatorApp */;
+			target = 8B8E2AED2CE6F173001EEC99 /* CalculatorApp1 */;
 			targetProxy = 8B8E2B0F2CE6F174001EEC99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BD1E0B12CEECB9F00DF9E51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BD1E0B02CEECB9F00DF9E51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8B8E2B182CE6F174001EEC99 /* Debug */ = {
@@ -300,7 +347,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 63SB2B8YJ5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RemindCalulatorApp/Info.plist;
+				INFOPLIST_FILE = CalculatorApp1/info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -327,7 +374,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 63SB2B8YJ5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RemindCalulatorApp/Info.plist;
+				INFOPLIST_FILE = CalculatorApp1/info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -539,7 +586,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8B8E2AE92CE6F173001EEC99 /* Build configuration list for PBXProject "CalculatorApp" */ = {
+		8B8E2AE92CE6F173001EEC99 /* Build configuration list for PBXProject "CalculatorApp1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B8E2B1A2CE6F174001EEC99 /* Debug */,
@@ -548,7 +595,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B8E2B172CE6F174001EEC99 /* Build configuration list for PBXNativeTarget "RemindCalulatorApp" */ = {
+		8B8E2B172CE6F174001EEC99 /* Build configuration list for PBXNativeTarget "CalculatorApp1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B8E2B182CE6F174001EEC99 /* Debug */,
