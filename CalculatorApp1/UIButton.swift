@@ -1,29 +1,38 @@
-//
-//  UIButton.swift
-//  RemindCalulatorApp
-//
-//  Created by Hwangseokbeom on 11/15/24.
-//
-
 import UIKit
-import SnapKit
-
 
 extension UIButton {
     static func create(withTitle title: String) -> UIButton {
         let button = UIButton()
-        let calculatorButton = CalculatorButton.from(title: title)
-        button.setTitle(title, for: .normal)
-        button.titleLabel?.font = .boldSystemFont(ofSize: 30)
-        button.frame.size.width = 80
-        button.frame.size.height = 80
-        button.layer.cornerRadius = 40
-        switch calculatorButton {
-        case .allClear, .equals, .addition, .subtraction, .multiplication, .division:
-            button.backgroundColor = .orange
-        default:
-            button.backgroundColor = UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)
+  
+        var configuration = UIButton.Configuration.filled()
+        let configurationTitle = title
+        let customFont = UIFont.systemFont(ofSize: 30, weight: .bold)
+        var attributedTitle: AttributedString?
+        do {
+            attributedTitle = try AttributedString(configurationTitle, attributes: AttributeContainer([.font: customFont]))
+        } catch {
+            print("Error creating AttributedString: \(error)")
         }
+        if let attributedTitle = attributedTitle {
+            configuration.attributedTitle = attributedTitle
+        }
+        configuration.baseForegroundColor = .white
+        configuration.cornerStyle = .capsule
+        configuration.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
+    
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.widthAnchor.constraint(equalToConstant: 80).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        
+        let operationButton = CalculatorButton.from(title: title)
+        switch operationButton {
+        case .allClear, .equals, .addition, .subtraction, .multiplication, .division:
+            configuration.baseBackgroundColor = .orange
+        default:
+            configuration.baseBackgroundColor = UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)
+        }
+        button.configuration = configuration
+        
         return button
     }
 }
