@@ -13,7 +13,7 @@ class CalculatorViewModel {
     
     // 숫자를 입력할 때 처리하는 메서드
     func inputNumber(_ number: Int) {
-        if displayText == "0" { // 0이거나 연산자 입력 후 새 숫자 시작
+        if displayText == "0" || displayText == "오류" { // 0이거나 연산자 입력 후 새 숫자 시작
             displayText = "\(number)"
         } else {
             displayText += "\(number)"
@@ -33,8 +33,12 @@ class CalculatorViewModel {
     // = 버튼을 눌렀을 때 호출하여 최종 결과를 계산
     func calculateResult() {
         if let value = Int(displayText) {
-            let result = model.calculate(with: value)
-            displayText = "\(result)"
+            if let result = model.calculate(with: value){
+                displayText = "\(result)"
+            }
+            else{
+                displayText = "오류"
+            }
         }
     }
     

@@ -19,8 +19,13 @@ class CalculatorModel {
     }
     
     // 주어진 값으로 연산을 수행하고 중간 결과를 유지합니다.
-    func calculate(with value: Int) -> Int {
+    func calculate(with value: Int) -> Int? {
         if let operation = pendingOperation { // 연산자가 안들어 왔으면 값 그대로 보냄
+            if operation(1, 1) == 1 / 1 && value == 0 {
+                pendingOperation = nil // 연산 초기화
+                return nil // 오류 반환
+            }
+            
             currentValue = operation(currentValue, value)
             pendingOperation = nil  // 연산을 수행한 후 초기화
         } else {
