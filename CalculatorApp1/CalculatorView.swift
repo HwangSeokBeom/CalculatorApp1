@@ -37,7 +37,7 @@ class CalculatorView: UIView {
     private func setupUI(){
         backgroundColor = .black
         addSubview(displayLabel)
-        addSubview(buttonStack)
+        addSubview(buttonStack) // test
         
         displayLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(30)
